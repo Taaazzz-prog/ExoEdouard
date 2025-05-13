@@ -1,3 +1,7 @@
+//Fichier dans lequel noius appelons notre fichier avec les fonctions en utilisant require
+
+
+
 const calc = require('./Exo1-fonctionCalcul');
 
 console.log("Addition : " + calc.addition(5, 3));
