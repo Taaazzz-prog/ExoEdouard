@@ -17,7 +17,7 @@ const path = require('path');
 const filePath = path.join(__dirname, 'notes.txt');
 
 // Étape 1 : Écrire une première note dans le fichier
-const initialText = 'je mange des chats sur sa chatte\n';
+const initialText = 'je mange des chats avec ma voisine\n';
 fs.writeFileSync(filePath, initialText, { encoding: 'utf8', flag: 'w' });
 console.log('Première note écrite dans le fichier.');
 
