@@ -33,3 +33,4 @@ const tabulatedContent = fileContent
   .map(line => `\t${line}`) // Ajoute une tabulation au début de chaque ligne
   .join('\n'); // Recombine les lignes avec des sauts de ligne
 console.log('Contenu du fichier :\n', tabulatedContent);
+
