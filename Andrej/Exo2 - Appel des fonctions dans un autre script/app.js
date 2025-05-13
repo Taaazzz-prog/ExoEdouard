@@ -19,6 +19,3 @@ notes.readNotes();
 // => Cette ligne appelle la fonction `readNotes` du module `notes` pour lire le contenu du fichier `notes.txt`.
 // => Cela affichera le contenu du fichier dans la console, y compris la note que nous venons d'ajouter.
 
-
-
-
