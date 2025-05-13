@@ -24,7 +24,9 @@ function division(a,b){
 //export des functoions
 module.exports = {
     addition,
-    soustraction
+    soustraction,
+    multiplication,
+    division
 };
 // On peut aussi utiliser le module 'exports' pour exporter les fonctions
 // exports.addition = addition;
