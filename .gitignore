@@ -1,3 +1,4 @@
 # Node.js
 node_modules/
+# Ne pas sauvegarder les fichiers de test
 test.js
