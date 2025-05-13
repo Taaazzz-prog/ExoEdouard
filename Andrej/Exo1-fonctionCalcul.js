@@ -1,3 +1,6 @@
+//Fichier de configuration des fonctions a exporter
+
+
 
 //fonctions addition et soustraction
 // On peut aussi utiliser le module 'exports' pour exporter les fonctions
