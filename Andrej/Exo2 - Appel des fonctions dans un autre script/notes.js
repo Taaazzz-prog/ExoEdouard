@@ -3,6 +3,7 @@
     // readnotes() : qui lira le fichier quand elle sera appeler dans app.js
 // => Ces deux fonctions seront utilisées pour ajouter et lire des notes dans le fichier `notes.txt`.
 
+
 //On appelle la bibliothèque fs
 const fs = require('fs');
 // => Cette ligne importe le module `fs` (File System) de Node.js, qui permet de manipuler des fichiers et des répertoires.
