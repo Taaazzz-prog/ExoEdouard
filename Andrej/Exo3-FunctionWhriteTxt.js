@@ -32,4 +32,3 @@ fs.writeFile(filePath, text, options, (err) => {
   }
 });
 
-
