@@ -1,4 +1,4 @@
-const calc = require('./1-andrej-Exo1-fonctionCalcul');
+const calc = require('./Exo1-fonctionCalcul');
 
 console.log("Addition : " + calc.addition(5, 3));
 console.log("Soustraction : " + calc.soustraction(5, 3));
