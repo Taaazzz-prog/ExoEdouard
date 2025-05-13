@@ -36,3 +36,4 @@ function readFileSync(filePath) {
   
   // Appel de la fonction pour lire le fichier
   readFileSync(filePath);
+  
