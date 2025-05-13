@@ -57,6 +57,8 @@ module.exports = {
 // => En utilisant ce code, vous pouvez facilement ajouter des notes à un fichier texte et lire son contenu, ce qui est utile pour la gestion de notes ou de journaux dans une application Node.js.
 // => Vous pouvez appeler ces fonctions dans un autre fichier JavaScript (par exemple, `app.js`) pour ajouter des notes et afficher le contenu du fichier.
 // => Par exemple, dans `app.js`, vous pouvez faire quelque chose comme ceci :
-
+// const notes = require('./notes');
+// notes.addNote('Ceci est une nouvelle note.');
+// notes.readNotes();
 // => Cela ajoutera une nouvelle note au fichier `notes.txt` et affichera le contenu du fichier dans la console.
 // => Vous pouvez également personnaliser le texte des notes en fonction de vos besoins.
