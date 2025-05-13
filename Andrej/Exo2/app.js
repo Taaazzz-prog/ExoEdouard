@@ -11,7 +11,7 @@
 const notes = require('./notes');
 
 //On appelle la fonction addNote pour ajouter une note
-notes.addNote('On va tester si cette merde fonctionne bien?');
+notes.addNote('On va tester si ca fonctionne bien?');
 // => Cette ligne appelle la fonction `addNote` du module `notes` pour ajouter une nouvelle note au fichier `notes.txt`.
 // => La note ajoutée est "On va tester si cette merde fonctionne bien?".
 //On appelle la fonction readNotes pour lire le contenu du fichier
