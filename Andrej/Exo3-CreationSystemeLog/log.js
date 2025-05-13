@@ -40,10 +40,10 @@ function createLogDirectory() {
     // Vérifie si le dossier n'existe pas
     fs.mkdirSync(logDir, { recursive: true });
     // Crée le dossier et ses sous-dossiers si nécessaire
-    console.log(`Dossier LOG créé : ${logDir}`);
+    console.log(`Dossier LOG créé :\n\t ${logDir}\n`);
   } else {
     // Si le dossier existe déjà, affiche un message
-    console.log(`Le dossier LOG existe déjà : ${logDir}`);
+    console.log(`Le dossier LOG existe déjà :\n\t ${logDir}\n`);
   }
 }
 //On verifie si le fichier log.txt existe dans le cas contraire on va le creer
@@ -52,10 +52,10 @@ function createLogFile() {
     // Vérifie si le fichier n'existe pas
     fs.writeFileSync(logFilePath, '', { encoding: 'utf8', flag: 'w' });
     // Crée le fichier log.txt
-    console.log(`Fichier log.txt créé : ${logFilePath}`);
+    console.log(`Fichier log.txt créé :\n\t ${logFilePath}\n`);
   } else {
     // Si le fichier existe déjà, affiche un message
-    console.log(`Le fichier log.txt existe déjà : ${logFilePath}`);
+    console.log(`Le fichier log.txt existe déjà :\n\t ${logFilePath}\n`);
   }
 }
 //On va ecrire dans le fichier log.txt
@@ -76,14 +76,15 @@ function writeLog() {
   const logContent = `Nom de l'utilisateur : ${userName}\nDate et heure : ${formattedDate}\nType d'OS : ${osType}\nNom de la machine : ${machineName}\n\n`;
   // On écrit dans le fichier log.txt
   fs.appendFileSync(logFilePath, logContent, { encoding: 'utf8', flag: 'a' });
-  console.log('Log ajouté avec succès !');
+  console.log('Log ajouté avec succès !\n');
 }
 //On va afficher le contenu du fichier log.txt dans la console
 function readLogFile() {
   // On lit le contenu du fichier log.txt
   const logContent = fs.readFileSync(logFilePath, { encoding: 'utf8' });
   // On affiche le contenu du fichier log.txt dans la console
-  console.log('Contenu du fichier log.txt :\n', logContent);
+  console.log('Contenu du fichier log.txt :\n\n', logContent);
+  console.log('Fin du contenu du fichier log.txt.\n');
 }
 // On appelle les fonctions
 createLogDirectory();

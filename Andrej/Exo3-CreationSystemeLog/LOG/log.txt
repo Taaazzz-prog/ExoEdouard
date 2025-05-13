@@ -1,7 +1,8 @@
 Nom de l'utilisateur : formation
-Date et heure : 13/05/2025 14:46:20
+Date et heure : 13/05/2025 15:19:32
 Type d'OS : Linux
 Nom de la machine : pc-formation
 
 
 ----------------------------------------
+
