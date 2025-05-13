@@ -28,21 +28,19 @@ if (!fs.existsSync(filePath)) {
 // Lecture du contenu existant du fichier
 let existingContent = fs.readFileSync(filePath, { encoding: 'utf8' });
 
-// Étape 1 : Écrire ou ajouter une première note
-const initialText = 'je mange des chats avec ma voisine\n';
-if (existingContent.trim() === '') {
-  // Si le fichier est vide, on écrit la première note
-  fs.writeFileSync(filePath, initialText, { encoding: 'utf8', flag: 'w' });
-  console.log('Première note écrite dans le fichier.');
-} else {
-  // Si le fichier contient déjà du contenu, on ajoute la note à la suite
-  fs.appendFileSync(filePath, initialText, { encoding: 'utf8', flag: 'a' });
-  console.log('Première note ajoutée à la suite du fichier.');
+// Ajout d'un saut de ligne si le fichier contient déjà du contenu
+if (existingContent.trim() !== '') {
+  fs.appendFileSync(filePath, '\n', { encoding: 'utf8', flag: 'a' });
 }
 
+// Étape 1 : Écrire ou ajouter une première note
+const initialText = 'je mange des chats avec ma voisine\n';
+fs.appendFileSync(filePath, initialText, { encoding: 'utf8', flag: 'a' });
+console.log('Première note ajoutée au fichier.');
+
 // Étape 2 : Ajouter une autre note au fichier
-const additionalText = 'Merde tes un gros malade toi\n';
-fs.appendFileSync(filePath, additionalText, { encoding: 'utf8', flag: 'a' });
+const additionalText = 'Merde tes un gros malade toi';
+fs.appendFileSync(filePath, ` ${additionalText}\n`, { encoding: 'utf8', flag: 'a' });
 console.log('Deuxième note ajoutée au fichier.');
 
 // Étape 3 : Lire et afficher le contenu du fichier avec une tabulation
