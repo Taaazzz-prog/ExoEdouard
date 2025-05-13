@@ -26,7 +26,7 @@ module.exports = {
     addition,
     soustraction,
     multiplication,
-    division
+    division,
 };
 // On peut aussi utiliser le module 'exports' pour exporter les fonctions
 // exports.addition = addition;
