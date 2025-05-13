@@ -1,3 +1,8 @@
+// Exo2 - Créer un module textUtils.js qui contient deux fonctions : capitalizeFirstLetter et reverseText.
+// La fonction capitalizeFirstLetter prend une chaîne de caractères en entrée et retourne la même chaîne avec la première lettre en majuscule.
+// La fonction reverseText prend une chaîne de caractères en entrée et retourne la même chaîne inversée.
+
+
 //On importe le module textUtils
 const textUtils = require('./Exo2-textUtils');
 
